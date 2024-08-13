@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descripition" content="Página de adoção de animais e doações. .">
+  <meta name="author" content="Júlia Eduarda Monteiro de Oliveira">
+  <title>Contato</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+
+<body >
+  <header>
+    <link rel="stylesheet" href="css/menu.css">
+    <div class="container_menu">
+      <div class="logo"><img src="img/logotipo fab.png" alt="logotipo"></div>
+      <div class="menu">
+        <nav>
+
+          <a href="index.html"> inicio</a>
+          <a href="blog.html"> blog</a>
+          <a href="sobrenos.html"> sobre nos</a>
+          <a href="login.html"> contato</a>
+
+        </nav>
+
+      </div>
+      <button onclick="animar()" id="btn-menu">
+
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+
+
+      </button>
+      <div class="menu-mobile" id="menu-mobile">
+        <nav>
+
+          <a href="index.html"> inicio</a>
+          <a href="blog.html"> blog</a>
+          <a href="sobrenos.html"> sobre nos</a>
+          <a href="login.html"> contato</a>
+
+        </nav>
+
+      </div>
+      <div class="sociais">
+        <button><img src="img/instagram.png" alt="insta"><link rel="instagram" href="https://www.instagram.com/duda_monteiro02/"></button>
+        <button><img src="img/youtube.png" alt="yt"><link rel="robocopgay" href="https://youtu.be/eejMuezMhIY?si=jo_S64CC05ijHB2C"></button>
+        <button><img src="img/twittermenu.png" alt="twitter"></button>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="form-container" >
+    <div class="container">
+      <form action="envia.php" method="post">
+        <h1>Entre em contato conosco</h1>
+        <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+        <div class="input-single">
+          <input class="input" type="text" id="nome" name="nome" required>
+          <label for="nome">Seu nome completo</label>
+        </div>
+        <div class="input-single">
+          <input class="input" type="email" id="email" name="email" required>
+          <label for="email">Seu e-mail</label>
+        </div>
+        <div class="input-single">
+          <input class="input" type="tel" id="telefone" name="telefone" required>
+          <label for="telefone">Seu telefone</label>
+        </div>
+        <div class="input-single">
+          <input class="input" type="text" id="message" name="mensagem" required>
+          <label class="message">Deixe uma mensagem para saber do que se trata</label>
+        </div>
+
+        <div>
+          <label class="horario" for="day-period">Em qual horário prefere nos visitar?</label>
+          <select class="entry" name="day-period">
+            <option value="none">Selecione aqui</option>
+            <option value="morning">9:00</option>
+            <option value="afternoon">15:00</option>
+            <option value="evening">19:00</option>
+          </select>
+        </div>
+
+<input class="btn" type="submit" value="Enviar" >
+      </form>
+    </div><!--container-->
+  </section>
+
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
